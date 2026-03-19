@@ -1,0 +1,125 @@
+* {
+  font-family: "Google Sans", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  width: 100%;
+  background: url("Media/BinuezaBG.svg") center/cover;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.419);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    text-align: center;
+    text-transform: capitalize;
+
+    li {
+      text-transform: capitalize;
+      a {
+        text-transform: capitalize;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+.content {
+  padding: 4em;
+  z-index: 2;
+  position: relative;
+  padding-block: 6em;
+}
+.mainchar {
+  position: absolute;
+  z-index: 1;
+  left: 31%;
+  top: 7%;
+  width: 37%;
+  border: none;
+}
+.mainbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.307);
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.375),
+    inset -2px 0px 10px rgba(0, 0, 0, 0.305);
+  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 3em;
+}
+.pfp {
+  position: absolute;
+  z-index: 2;
+  bottom: -12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  border-radius: 150px;
+  border: 30px solid rgba(255, 255, 255, 0.3);
+  height: auto;
+}
+.otherbg {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+.arrowl,
+.arrowr {
+  position: absolute;
+  left: -2%;
+  width: 5%;
+  top: 45%;
+  background-color: rgba(255, 255, 255, 0.307);
+  border-radius: 200px;
+  transition: background-color 0.3s ease;
+}
+.arrowl:hover,
+.arrowr:hover {
+  background-color: rgba(255, 255, 255, 0.996);
+  cursor: pointer;
+}
+.arrowr {
+  left: auto;
+  right: -2%;
+}
+.Lastn {
+  font-family: "Climate Crisis", sans-serif !important;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  color: white;
+  opacity: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12em;
+  z-index: -1;
+  user-select: none;
+
+  span {
+    font-family: "Goblin One", serif;
+  }
+}
